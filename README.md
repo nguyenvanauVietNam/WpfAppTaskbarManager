@@ -1,0 +1,1 @@
+# WpfAppTaskbarManager
