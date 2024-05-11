@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppTaskbarManager", "WpfAppTaskbarManager.csproj", "{44C64C71-B2D5-4BCF-AE28-2FF2759B6830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44C64C71-B2D5-4BCF-AE28-2FF2759B6830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C64C71-B2D5-4BCF-AE28-2FF2759B6830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C64C71-B2D5-4BCF-AE28-2FF2759B6830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C64C71-B2D5-4BCF-AE28-2FF2759B6830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DFACAAC-32FA-4FD6-B398-6F047967C639}
+	EndGlobalSection
+EndGlobal
