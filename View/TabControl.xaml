@@ -3,16 +3,32 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfAppTaskbarManager"
+      xmlns:local="clr-namespace:WpfAppTaskbarManager.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="">
-
+    
+    <Page.DataContext>
+        <local:ProcessInfoViewModel/>
+        <!-- Tạo một instance mới của ProcessInfoViewModel và gán cho DataContext -->
+    </Page.DataContext>
     <Grid>
         <TabControl>
             <TabItem Header="Process">
                 <Grid Background="#FFE5E5E5">
-                    
+                    <ListView ItemsSource="{Binding Processes}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Process ID" DisplayMemberBinding="{Binding IDProcess}"/>
+                                <GridViewColumn Header="Process Name" DisplayMemberBinding="{Binding NameProcess}"/>
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding StatusProcess}"/>
+                                <GridViewColumn Header="Memory Usage (KB)" DisplayMemberBinding="{Binding MemoryUsage}"/>
+                                <GridViewColumn Header="CPU Usage (%)" DisplayMemberBinding="{Binding CPUUsage}"/>
+                                <GridViewColumn Header="Disk Usage (%)" DisplayMemberBinding="{Binding DiskUsage}"/>
+                                <GridViewColumn Header="GPU Usage (%)" DisplayMemberBinding="{Binding GPUUsage}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
                 </Grid>
             </TabItem>
             <TabItem Header="Performance">
